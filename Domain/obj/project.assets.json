@@ -2,6 +2,27 @@
   "version": 3,
   "targets": {
     "net6.0": {
+      "DTAT/1.0.4": {
+        "type": "package",
+        "compile": {
+          "lib/net5.0/Dtat.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/Dtat.dll": {}
+        }
+      },
+      "DTAT.DDD/1.0.4": {
+        "type": "package",
+        "dependencies": {
+          "MediatR": "9.0.0"
+        },
+        "compile": {
+          "lib/net5.0/Dtat.Ddd.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/Dtat.Ddd.dll": {}
+        }
+      },
       "FluentResults/3.5.0": {
         "type": "package",
         "compile": {
@@ -11,11 +32,8 @@
           "lib/netstandard2.1/FluentResults.dll": {}
         }
       },
-      "MediatR/10.0.1": {
+      "MediatR/9.0.0": {
         "type": "package",
-        "dependencies": {
-          "MediatR.Contracts": "1.0.1"
-        },
         "compile": {
           "lib/netstandard2.1/MediatR.dll": {}
         },
@@ -23,18 +41,45 @@
           "lib/netstandard2.1/MediatR.dll": {}
         }
       },
-      "MediatR.Contracts/1.0.1": {
-        "type": "package",
+      "Resources/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
         "compile": {
-          "lib/netstandard2.0/MediatR.Contracts.dll": {}
+          "bin/placeholder/Resources.dll": {}
         },
         "runtime": {
-          "lib/netstandard2.0/MediatR.Contracts.dll": {}
+          "bin/placeholder/Resources.dll": {}
         }
       }
     }
   },
   "libraries": {
+    "DTAT/1.0.4": {
+      "sha512": "zrPgHAztqP7a5M76+Co80cJWREW9h+Hzw7VmwV0980s6DfrlbjDe9LPmt3l4ZGRpIJpF95nkLpdmKTqkgd0anQ==",
+      "type": "package",
+      "path": "dtat/1.0.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "DTAT03.png",
+        "dtat.1.0.4.nupkg.sha512",
+        "dtat.nuspec",
+        "lib/net5.0/Dtat.dll"
+      ]
+    },
+    "DTAT.DDD/1.0.4": {
+      "sha512": "g2FSTKGlI8rjiafC79ZCk7P6btEihSDRk13j8zarHWzxfrX4LrXfECvnLLfKmdEVyMP6HTRGQ0hwfbmezi8PKw==",
+      "type": "package",
+      "path": "dtat.ddd/1.0.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "DTAT03.png",
+        "dtat.ddd.1.0.4.nupkg.sha512",
+        "dtat.ddd.nuspec",
+        "lib/net5.0/Dtat.Ddd.dll"
+      ]
+    },
     "FluentResults/3.5.0": {
       "sha512": "lAAigAhVw3RBPQHhjmMbkdYmZUy5PViBkVXjzSyZrVhvsDtFJGPsiEK/KDvENIzemtzQ2y5/WOMERPg8l87iJg==",
       "type": "package",
@@ -49,41 +94,36 @@
         "lib/netstandard2.1/FluentResults.dll"
       ]
     },
-    "MediatR/10.0.1": {
-      "sha512": "vnjbk4giDJzJelh34Ygt0eorApCKrRFB7j0pauFPY1oxfO3cEZ7FugBrIOjCM76SDGTOmPFfbfmVnz1t3iFrGA==",
+    "MediatR/9.0.0": {
+      "sha512": "8b3UYNxegHVYcJMG2zH8wn+YqxLvXG+eMfj0cMCq/jTW72p6O3PCKMkrIv0mqyxdW7bA4gblsocw7n+/9Akg5g==",
       "type": "package",
-      "path": "mediatr/10.0.1",
+      "path": "mediatr/9.0.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "gradient_128x128.png",
+        "lib/net461/MediatR.dll",
+        "lib/net461/MediatR.xml",
+        "lib/netstandard2.0/MediatR.dll",
+        "lib/netstandard2.0/MediatR.xml",
         "lib/netstandard2.1/MediatR.dll",
         "lib/netstandard2.1/MediatR.xml",
-        "mediatr.10.0.1.nupkg.sha512",
+        "mediatr.9.0.0.nupkg.sha512",
         "mediatr.nuspec"
       ]
     },
-    "MediatR.Contracts/1.0.1": {
-      "sha512": "NsRvOxthhkYml4DcBMyJsmym8C4MchioH7wxKVPEg7plFj9Euh/i4IcmZ3Gvgx6+K8obeuhPeJdoBl56wnuo3A==",
-      "type": "package",
-      "path": "mediatr.contracts/1.0.1",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "gradient_128x128.png",
-        "lib/net461/MediatR.Contracts.dll",
-        "lib/net461/MediatR.Contracts.xml",
-        "lib/netstandard2.0/MediatR.Contracts.dll",
-        "lib/netstandard2.0/MediatR.Contracts.xml",
-        "mediatr.contracts.1.0.1.nupkg.sha512",
-        "mediatr.contracts.nuspec"
-      ]
+    "Resources/1.0.0": {
+      "type": "project",
+      "path": "../Resources/Resources.csproj",
+      "msbuildProject": "../Resources/Resources.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "DTAT >= 1.0.4",
+      "DTAT.DDD >= 1.0.4",
       "FluentResults >= 3.5.0",
-      "MediatR >= 10.0.1"
+      "Resources >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -116,7 +156,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "I:\\Github\\eShopOnWeb\\Resources\\Resources.csproj": {
+              "projectPath": "I:\\Github\\eShopOnWeb\\Resources\\Resources.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -129,13 +173,17 @@
       "net6.0": {
         "targetAlias": "net6.0",
         "dependencies": {
+          "DTAT": {
+            "target": "Package",
+            "version": "[1.0.4, )"
+          },
+          "DTAT.DDD": {
+            "target": "Package",
+            "version": "[1.0.4, )"
+          },
           "FluentResults": {
             "target": "Package",
             "version": "[3.5.0, )"
-          },
-          "MediatR": {
-            "target": "Package",
-            "version": "[10.0.1, )"
           }
         },
         "imports": [

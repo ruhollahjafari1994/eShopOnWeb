@@ -1,4 +1,5 @@
 ﻿using System.Linq;
+using System.Linq.Expressions;
 using Microsoft.EntityFrameworkCore;
 
 namespace Dtat.Ddd.EntityFrameworkCore
@@ -175,5 +176,15 @@ namespace Dtat.Ddd.EntityFrameworkCore
 
 			return result;
 		}
-	}
+
+        public Task<IEnumerable<TEntity>> GetSomeAsync(Expression<Func<TEntity, bool>> predicate, CancellationToken cancellationToken = default)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<TEntity> GetByIdAsync(Guid id, CancellationToken cancellationToken = default)
+        {
+            throw new NotImplementedException();
+        }
+    }
 }

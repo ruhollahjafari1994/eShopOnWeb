@@ -1,12 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "AhziP2c/GYzCxKmauNbWZ5mXfN9VFn00v2qQ7M5MlZukEn+EMC5O8QPAnanNmuUUpu48sg+AmTAYkZPfoYDhbw==",
+  "dgSpecHash": "puIxN8U4S5LiamMaXUfmlvuL9tUHUPxhHtI1H1eztX70dhZ9h9djj8XOgx6GDntud9GLwYc2Rm9bU96aEqy7rQ==",
   "success": true,
   "projectFilePath": "I:\\Github\\eShopOnWeb\\Domain\\Domain.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Geek\\.nuget\\packages\\dtat\\1.0.4\\dtat.1.0.4.nupkg.sha512",
+    "C:\\Users\\Geek\\.nuget\\packages\\dtat.ddd\\1.0.4\\dtat.ddd.1.0.4.nupkg.sha512",
     "C:\\Users\\Geek\\.nuget\\packages\\fluentresults\\3.5.0\\fluentresults.3.5.0.nupkg.sha512",
-    "C:\\Users\\Geek\\.nuget\\packages\\mediatr\\10.0.1\\mediatr.10.0.1.nupkg.sha512",
-    "C:\\Users\\Geek\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512"
+    "C:\\Users\\Geek\\.nuget\\packages\\mediatr\\9.0.0\\mediatr.9.0.0.nupkg.sha512"
   ],
   "logs": []
 }
