@@ -1,4 +1,6 @@
-﻿namespace Dtat.Ddd.EntityFrameworkCore
+﻿using Dtat.Ddd;
+
+namespace RJ.EntityFrameworkCore
 {
 	public abstract class UnitOfWork<TDbContext> :
 		IUnitOfWork where TDbContext : Microsoft.EntityFrameworkCore.DbContext

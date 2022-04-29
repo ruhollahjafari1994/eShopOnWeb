@@ -1,7 +1,9 @@
-﻿namespace Persistence
+﻿using RJ.EntityFrameworkCore;
+
+namespace Persistence
 {
 	public class UnitOfWork :
-		Dtat.Ddd.EntityFrameworkCore.UnitOfWork<DatabaseContext>, IUnitOfWork
+		 UnitOfWork<DatabaseContext>, IUnitOfWork
 	{
 		public UnitOfWork(DatabaseContext databaseContext) : base(databaseContext: databaseContext)
 		{

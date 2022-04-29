@@ -1,8 +1,9 @@
 ﻿using System.Linq;
 using System.Linq.Expressions;
+using Dtat.Ddd;
 using Microsoft.EntityFrameworkCore;
 
-namespace Dtat.Ddd.EntityFrameworkCore
+namespace RJ.EntityFrameworkCore
 {
 	public abstract class Repository<TEntity> :
 		IRepository<TEntity> where TEntity : class, IAggregateRoot
