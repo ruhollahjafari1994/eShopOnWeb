@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore;
 namespace Persistence.Users
 {
 	public class UserRepository :
-		Dtat.Ddd.EntityFrameworkCore.Repository<Domain.Aggregates.Users.User>, IUserRepository
+		RJ.EntityFrameworkCore.Repository<Domain.Aggregates.Users.User>, IUserRepository
 	{
 		public UserRepository(DatabaseContext databaseContext) : base(databaseContext: databaseContext)
 		{
