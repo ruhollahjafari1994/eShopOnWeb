@@ -1,0 +1,264 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Api</name>
+    </assembly>
+    <members>
+        <member name="T:Api.Controllers.DiscountCouponsController">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Api.Controllers.DiscountCouponsController.#ctor(Persistence.DatabaseContext)">
+            <summary>
+            
+            </summary>
+            <param name="databaseContext"></param>
+        </member>
+        <member name="M:Api.Controllers.DiscountCouponsController.GetAsync">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Controllers.DiscountCouponsController.GetAsync(System.Guid)">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Controllers.DiscountCouponsController.PostAsync(ViewModels.DiscountCoupons.DiscountCouponRequestViewModel)">
+            <summary>
+            Create
+            </summary>
+            <param name="viewModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Controllers.DiscountCouponsController.PutAsync(ViewModels.DiscountCoupons.DiscountCouponViewModel)">
+            <summary>
+            
+            </summary>
+            <param name="viewModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Controllers.DiscountCouponsController.DeleteAsync(System.Guid)">
+            <summary>
+            
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Api.Controllers.ProvincesController">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Api.Controllers.ProvincesController.#ctor(Persistence.DatabaseContext)">
+            <summary>
+            
+            </summary>
+            <param name="databaseContext"></param>
+        </member>
+        <member name="M:Api.Controllers.ProvincesController.PostAsync(ViewModels.Provinces.ProvinceRequestViewModel)">
+            <summary>
+            Create
+            </summary>
+            <param name="viewModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Controllers.ProvincesController.GetAsync">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Controllers.ProvincesController.GetByIdAsync(System.Guid)">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Controllers.ProvincesController.PutAsync(ViewModels.Provinces.ProvinceViewModel)">
+            <summary>
+            
+            </summary>
+            <param name="viewModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Controllers.ProvincesController.DeleteByIdAsync(System.Guid)">
+            <summary>
+            
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Api.Controllers.UsersController">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Api.Controllers.UsersController.#ctor(Dtat.Logging.ILogger{Api.Controllers.UsersController},Persistence.IUnitOfWork)">
+            <summary>
+            
+            </summary>
+            <param name="logger"></param>
+            <param name="unitOfWork"></param>
+        </member>
+        <member name="P:Api.Controllers.UsersController.Logger">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Api.Controllers.UsersController.PostAsync(ViewModels.Users.CreateRequestViewModel)">
+            <summary>
+            Create
+            </summary>
+            <param name="viewModel"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Api.Program">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Api.Program.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Api.Program.Main(System.String[])">
+            <summary>
+            
+            </summary>
+            <param name="args"></param>
+        </member>
+        <member name="M:Api.Program.CreateHostBuilder(System.String[])">
+            <summary>
+            
+            </summary>
+            <param name="args"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Api.Startup">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Api.Startup.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            
+            </summary>
+            <param name="configuration"></param>
+        </member>
+        <member name="P:Api.Startup.Configuration">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Api.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            
+            </summary>
+            <param name="services"></param>
+        </member>
+        <member name="M:Api.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IWebHostEnvironment)">
+            <summary>
+            
+            </summary>
+            <param name="app"></param>
+            <param name="env"></param>
+        </member>
+        <member name="T:Api.Utilities.Constants">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Api.Utilities.Constants.#cctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Api.Utilities.Constants.Routing">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Api.Utilities.Constants.Routing.Controller">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Api.Utilities.ControllerBase">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Api.Utilities.ControllerBase.#ctor(Persistence.IUnitOfWork)">
+            <summary>
+            
+            </summary>
+            <param name="unitOfWork"></param>
+        </member>
+        <member name="P:Api.Utilities.ControllerBase.UnitOfWork">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Api.Utilities.ControllerBaseTemp">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Api.Utilities.ControllerBaseTemp.#ctor(Persistence.DatabaseContext)">
+            <summary>
+            
+            </summary>
+            <param name="databaseContext"></param>
+        </member>
+        <member name="P:Api.Utilities.ControllerBaseTemp.DatabaseContext">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Utilities.Middlewares.ExceptionHandlingMiddleware">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Utilities.Middlewares.ExceptionHandlingMiddleware.#ctor(Microsoft.AspNetCore.Http.RequestDelegate)">
+            <summary>
+            
+            </summary>
+            <param name="next"></param>
+        </member>
+        <member name="P:Utilities.Middlewares.ExceptionHandlingMiddleware.Next">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Utilities.Middlewares.ExceptionHandlingMiddleware.InvokeAsync(Microsoft.AspNetCore.Http.HttpContext)">
+            <summary>
+            
+            </summary>
+            <param name="httpContext"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Utilities.Middlewares.MyMiddlewareExtensions">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Utilities.Middlewares.MyMiddlewareExtensions.#cctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Utilities.Middlewares.MyMiddlewareExtensions.UseExceptionHandling(Microsoft.AspNetCore.Builder.IApplicationBuilder)">
+            <summary>
+            
+            </summary>
+            <param name="builder"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
