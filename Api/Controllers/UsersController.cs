@@ -93,7 +93,7 @@ namespace Api.Controllers
 						FirstName = userResult.Value.FullName.FirstName.Value,
 						LastName = userResult.Value.FullName.LastName.Value,
 					};
-
+				
 				result.WithValue(value: value);
 				// **************************************************
 
